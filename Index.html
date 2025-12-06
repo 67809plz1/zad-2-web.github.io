@@ -1,0 +1,38 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дашборд Курсы валют</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Дашборд: Курсы валют</h1>
+  </header>
+
+  <section class="available-widgets">
+    <h2>Доступные виджеты</h2>
+    <div id="available-list" class="widget-list">
+      <button data-pair="USD" class="add-widget-btn">USD / RUB</button>
+      <button data-pair="EUR" class="add-widget-btn">EUR / RUB</button>
+      <button data-pair="GBP" class="add-widget-btn">GBP / RUB</button>
+      <button data-pair="JPY" class="add-widget-btn">JPY / RUB</button>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <h2>Ваш дашборд</h2>
+    <div id="dashboard-grid" class="dashboard-grid" aria-live="polite" aria-label="Курсы валют виджеты">
+      <!-- Виджеты будут добавляться сюда -->
+    </div>
+  </section>
+
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/dragdrop.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
